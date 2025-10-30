@@ -9,6 +9,12 @@ Quarkus application deployed as AWS Lambda function, exposed through API Gateway
 - **Framework**: Quarkus with Lambda integration
 - **IaC**: AWS CDK for infrastructure deployment
 
+## Modules
+
+- [`lambda`](lambda/README.md) - Quarkus application with JAX-RS endpoints
+- [`lambda-st`](lambda-st/README.md) - System tests for deployed API
+- [`cdk`](cdk/README.md) - AWS infrastructure definition
+
 ## Prerequisites
 
 - Java 25
