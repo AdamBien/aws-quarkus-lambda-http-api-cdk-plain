@@ -1,4 +1,22 @@
-# lambda Project
+# Lambda Function
 
+Quarkus application deployed as AWS Lambda, exposed via API Gateway HTTP API.
 
-[Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
+## Endpoints
+
+- `/greetings` - Greeting service
+- `/time` - Current time service
+
+## Build
+
+```bash
+mvn clean package
+```
+
+Generates `target/function.zip` for Lambda deployment.
+
+## Local Testing
+
+```bash
+mvn quarkus:dev
+```
